@@ -3,18 +3,48 @@ body {
 }
 
 header {
-    background-color: aliceblue;
     margin-bottom: 50px;
-    padding: 50px 0 50px 0;
+    padding: 100px 0 50px 0;
     text-align: center;
 }
+  header span {
+    background-color: black;
+    color: white;
+    font-family: 'Courier Prime', 'Courier New', 'Courier', monospace;
+    font-size: 1.2em;
+    font-style: italic;    
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+h1, h2, h3 {
+  font-family: 'Courier Prime', 'Courier New', 'Courier', monospace;
+}
+
+h1 {
+  /*font-family: "Abril Fatface";*/
+  /*font-family: "Abhaya Libre";*/  
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+
+h2 {  
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+
+
+
 
 ol, ul {
     list-style-type: none;
+    font-family: 
 }
 
 section {
-    margin: 50px 0;
+    margin: 4rem 0 2.5rem;
 }
     section small, h3 { 
         display: inline;
