@@ -1,5 +1,8 @@
 body {
     background-color: snow;
+    /* font-family: Georgia, 'Times New Roman', Times, serif */
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 400;
 }
 
 header {
@@ -31,27 +34,73 @@ h1 {
 }
 
 h2 {  
+  text-align: right;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
 }
 
-
-
+li, p {
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
 
 ol, ul {
-    list-style-type: none;
-    font-family: 
+  font-family: 'Courier Prime', 'Courier New', 'Courier', monospace;
+  list-style-type: none;
+  padding-left: 0;  
 }
 
 section {
-    margin: 4rem 0 2.5rem;
+  margin: 2.5rem 0 2.5rem;
+  padding: 2em 0;
 }
     section small, h3 { 
-        display: inline;
+      display: inline;
     }
+
+  
 
 .experience {}
     .experience small, h3 {
-        display: inline;
+      display: inline;
     }
 
+.goals {
+  /* background-color: cadetblue; */
+
+}
+  .goals h2, p {
+    display: block
+  }
+
+  .goals h2 {
+    text-align: right;
+    word-wrap: break-word;
+  }
+  
+  .goals p {
+    font-size: 1.2rem;
+  }
+
+.skills {}
+  .skills ol {}
+    .skills ol li {
+      margin-bottom: 1.2rem;
+    }
+
+    .skills .other-skills {}
+      .skills .other-skills h3 {
+        display: inline-block;
+        /* padding-bottom: 1rem; */
+      }
+
+      .skills .other-skills ul {
+        list-style-type: square;
+        margin-left: 1.8rem;
+      }
+        .skills .other-skills ul :first-child {
+          list-style-type: none;
+          /* margin-left: 1rem; */
+        }
+      
