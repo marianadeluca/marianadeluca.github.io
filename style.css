@@ -1,8 +1,17 @@
 body {
     background-color: snow;
+    color: #242124;
     /* font-family: Georgia, 'Times New Roman', Times, serif */
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 400;
+}
+
+footer {
+  height: 4rem;
+  background-color: #242124;
+  margin-top: 150px;
+  outline: 2rem dotted #242124;
+  outline-offset: -16px;
 }
 
 header {
@@ -11,7 +20,8 @@ header {
     text-align: center;
 }
   header span {
-    background-color: black;
+    /*background-color: black;*/
+    background-color: #242124;
     color: white;
     font-family: 'Courier Prime', 'Courier New', 'Courier', monospace;
     font-size: 1.2em;
@@ -34,6 +44,8 @@ h1 {
 }
 
 h2 {  
+  font-size: 2.4rem;
+  line-height: 1.1em;
   text-align: right;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
@@ -59,12 +71,50 @@ section {
       display: inline;
     }
 
-  
+    section small {
+      padding-left: 5px;
+    }
 
-.experience {}
-    .experience small, h3 {
+.education {}
+    .education h4 {
+      font-size: 1.4rem;
+    }
+
+    .education h4, small {
       display: inline;
     }
+
+    .education li {
+      margin-bottom: 2rem;
+    }
+
+    .education ul {
+      list-style-type: square;
+      margin-top: 1rem;
+     
+    }
+      .education ul li {
+        margin: 1rem 0 0 1.2rem;
+      }
+        .education ul li p {
+          font-size: 1.2rem;
+        }
+
+    .education .academic {}
+      .education .academic h3, small {
+        display: inline;
+      }
+    
+
+.experience {}
+    .experience li {
+      margin-bottom: 2rem;
+    }
+
+    .experience h3, small {
+      display: inline;
+    }
+    
 
 .goals {
   /* background-color: cadetblue; */
@@ -80,7 +130,15 @@ section {
   }
   
   .goals p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 
+  }
+
+
+.languages {}
+  .languages li {
+    padding-bottom: 0.8rem;
   }
 
 .skills {}
@@ -97,10 +155,54 @@ section {
 
       .skills .other-skills ul {
         list-style-type: square;
-        margin-left: 1.8rem;
+        margin-left: 1.2em;
       }
-        .skills .other-skills ul :first-child {
-          list-style-type: none;
-          /* margin-left: 1rem; */
-        }
-      
+
+
+@media print {
+  body {
+    color: black;
+  }
+
+  footer {
+    display: none;
+  }
+
+  section {
+    margin: 20px 0 20px;
+  }
+
+  header {}
+    header span {
+      font-size: 14pt;
+    }
+
+  h1 {
+    font-size: 20pt !important;
+  }
+
+  h2 {
+    font-size: 18pt !important;
+    /*text-align: left !important;*/
+  }
+  
+  h3 {
+    font-size: 16pt !important;
+  }
+
+  h4 {
+    font-size: 12pt !important;
+  }
+
+  p, li {
+    font-size: 10pt !important;
+  }
+
+  /*
+  .col-3, .col-9 {
+    max-width: 100%;
+    width: 100% !important;
+    width: 100px !important;
+  }*/
+  
+}
