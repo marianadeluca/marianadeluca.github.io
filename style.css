@@ -67,7 +67,7 @@ section {
       padding-left: 5px;
     }
 
-.education {}
+.education 
     .education h4 {
       font-size: 1.4rem;
     }
@@ -92,13 +92,13 @@ section {
           font-size: 1.2rem;
         }
 
-    .education .academic {}
+    .education .academic 
       .education .academic h3, small {
         display: inline;
       }
     
 
-.experience {}
+.experience
     .experience li {
       margin-bottom: 2rem;
     }
@@ -107,17 +107,44 @@ section {
       display: inline;
     }
   
-.footer {
+.footer-line1 {
   background-color: #242124;
   height: 1px;
-  margin: 80px 5px 150px; 
-  width: 100%; 
+  margin: 80px auto 30px; 
+  width: 80%; 
+}
+  .footer-line1 ::after {
+    background-color: #242124;
+    border-radius: 100%;
+    content:"";
+    display: inline-block;
+    height: 7px;
+    left: 99%;
+    position: relative;
+    top: -3px;
+    width: 7px;
+
+  }
+
+  .footer-line1 ::before {
+    background-color: #242124;
+    border-radius: 100%;
+    content:"";
+    display: inline-block;
+    height: 7px;   
+    position: relative;
+    top: -3px;
+    width: 7px;
+  }
+
+.footer-line2 {
+  background-color: #242124;
+  height: 1px;
+  margin: 10px auto 150px; 
+  width: 50%; 
 }
 
-.goals {
-  /* background-color: cadetblue; */
-
-}
+.goals 
   .goals h2, p {
     display: block
   }
@@ -134,13 +161,13 @@ section {
   }
 
 
-.languages {}
+.languages
   .languages li {
     padding-bottom: 0.8rem;
   }
 
-.skills {}
-  .skills ol {}
+.skills 
+  .skills ol 
     .skills ol .skill-category {
       margin-bottom: 2.2rem;
     }
@@ -150,7 +177,7 @@ section {
       padding: 0 10px;
     }
 
-    .skills .other-skills {}
+    .skills .other-skills 
       .skills .other-skills h3 {
         display: inline-block;
         /* padding-bottom: 1rem; */
@@ -171,7 +198,7 @@ section {
     display: none;
   }
 
-  header {}
+  header 
     header span {
       color: black;
     }
@@ -180,7 +207,7 @@ section {
     margin: 20px 0 20px;
   }
 
-  header {}
+  header 
     header span {
       font-size: 14pt;
     }
