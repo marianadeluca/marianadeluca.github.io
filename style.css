@@ -6,14 +6,6 @@ body {
     font-weight: 400;
 }
 
-footer {
-  height: 4rem;
-  background-color: #242124;
-  margin-top: 150px;
-  outline: 2rem dotted #242124;
-  outline-offset: -16px;
-}
-
 header {
     margin-bottom: 50px;
     padding: 100px 0 50px 0;
@@ -114,7 +106,13 @@ section {
     .experience h3, small {
       display: inline;
     }
-    
+  
+.footer {
+  background-color: #242124;
+  height: 1px;
+  margin: 80px 5px 150px; 
+  width: 100%; 
+}
 
 .goals {
   /* background-color: cadetblue; */
@@ -143,8 +141,13 @@ section {
 
 .skills {}
   .skills ol {}
-    .skills ol li {
-      margin-bottom: 1.2rem;
+    .skills ol .skill-category {
+      margin-bottom: 2.2rem;
+    }
+
+    .skills .dotted-s {
+      font-size: 0.8em;
+      padding: 0 10px;
     }
 
     .skills .other-skills {}
@@ -167,6 +170,11 @@ section {
   footer {
     display: none;
   }
+
+  header {}
+    header span {
+      color: black;
+    }
 
   section {
     margin: 20px 0 20px;
