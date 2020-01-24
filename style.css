@@ -1,3 +1,8 @@
+a {
+  text-decoration: underline;
+  color: #242124;
+}
+
 body {
     background-color: snow;
     color: #242124;
@@ -14,12 +19,11 @@ header {
   header span {
     /*background-color: black;*/
     background-color: #242124;
-    color: white;
+    color: snow;
     font-family: 'Courier Prime', 'Courier New', 'Courier', monospace;
     font-size: 1.2em;
     font-style: italic;    
-    font-weight: 700;
-    letter-spacing: 0.1em;
+    font-weight: 700;    
     padding-left: 5px;
     padding-right: 5px;
   }
@@ -29,18 +33,33 @@ h1, h2, h3 {
 }
 
 h1 {
-  /*font-family: "Abril Fatface";*/
+  /*font-family: "Abril Fatface"; 87E0A2 A0D1B1 */
   /*font-family: "Abhaya Libre";*/  
-  font-size: 3.2rem;
-  font-weight: 400;
+  border: 5px solid #c6ecdc;
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0 auto 40px;
+  padding: 10px 0 10px;
+  text-transform: uppercase;
+  width: 650px;
+  
 }
 
 h2 {  
-  font-size: 2.4rem;
+  font-size: 2.2rem;
   line-height: 1.1em;
   text-align: right;
   text-transform: uppercase;
   padding-bottom: 0.5rem;
+}
+
+h3 {
+  /*background-color: black;
+  color: snow;*/
+  background-color: #c6ecdc;
+  color: black;
 }
 
 li, p {
@@ -67,7 +86,7 @@ section {
       padding-left: 5px;
     }
 
-.education 
+.education {}
     .education h4 {
       font-size: 1.4rem;
     }
@@ -79,9 +98,10 @@ section {
     .education li {
       margin-bottom: 2rem;
     }
+    
 
     .education ul {
-      list-style-type: square;
+      list-style: square;      
       margin-top: 1rem;
      
     }
@@ -92,89 +112,89 @@ section {
           font-size: 1.2rem;
         }
 
-    .education .academic 
+    .education .academic {}
       .education .academic h3, small {
         display: inline;
       }
     
+    .education h3.other-education  {
+      background-color: snow;
+    }   
 
-.experience
+.experience {}
     .experience li {
-      margin-bottom: 2rem;
+      margin-bottom: 2rem !important;
     }
 
     .experience h3, small {
       display: inline;
     }
+ 
+footer {
+  margin-bottom: 80px;
+}
+  .footer-line {
+    background-color: #c6ecdc;
+    height: 1px;
+    margin: 80px auto 20px; 
+    width: 70%; 
+  }
+
+  .site-text {
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: center;
+  }
+  /*
+    .footer-line1::after, .footer-line1::before {
+      background-color: #242124;
+      content:"";
+      display: inline-block;
+      height: 5px;      
+      position: relative;
+      
+      width: 5px;
+    }
+
+    .footer-line1::after {
+      left: 100%;
+      top: -23px;
+    }
+
+    .footer-line1::before {
+      top: -2px;
+    }*/
   
-.footer-line1 {
-  background-color: #242124;
-  height: 1px;
-  margin: 80px auto 30px; 
-  width: 80%; 
-}
-  .footer-line1 ::after {
-    background-color: #242124;
-    border-radius: 100%;
-    content:"";
-    display: inline-block;
-    height: 7px;
-    left: 99%;
-    position: relative;
-    top: -3px;
-    width: 7px;
 
-  }
-
-  .footer-line1 ::before {
-    background-color: #242124;
-    border-radius: 100%;
-    content:"";
-    display: inline-block;
-    height: 7px;   
-    position: relative;
-    top: -3px;
-    width: 7px;
-  }
-
-.footer-line2 {
-  background-color: #242124;
-  height: 1px;
-  margin: 10px auto 150px; 
-  width: 50%; 
-}
-
-.goals 
+.goals {}
   .goals h2, p {
     display: block
   }
 
   .goals h2 {
-    text-align: right;
     word-wrap: break-word;
   }
   
   .goals p {
     font-size: 1.4rem;
     font-weight: 300;
-    margin-bottom: 
   }
 
 
-.languages
+.languages{}
   .languages li {
-    padding-bottom: 0.8rem;
+    margin-bottom: 1rem;
   }
 
-.skills 
-  .skills ol 
-    .skills ol .skill-category {
-      margin-bottom: 2.2rem;
-    }
+.skills {}
+  .skills .skill-category {
+    margin-bottom: 2rem;
+  }
 
     .skills .dotted-s {
+      color: #c6ecdc;
       font-size: 0.8em;
-      padding: 0 10px;
+      padding: 0 12px;
     }
 
     .skills .other-skills 
@@ -186,6 +206,10 @@ section {
       .skills .other-skills ul {
         list-style-type: square;
         margin-left: 1.2em;
+      }
+
+      .skills .other-skills h3 {
+        background-color: snow;
       }
 
 
@@ -200,7 +224,7 @@ section {
 
   header 
     header span {
-      color: black;
+      color: black !important;
     }
 
   section {
