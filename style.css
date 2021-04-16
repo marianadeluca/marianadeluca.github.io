@@ -32,8 +32,6 @@ button:hover {
   font-size: 36px;
 }
 
-
-
 header {
     margin-bottom: 50px;
     padding: 100px 0 50px 0;
@@ -89,6 +87,7 @@ li, p {
   font-family: 'Lato', 'Arial', sans-serif;
   font-size: 1.2rem;
   font-weight: 300;
+  line-height: 1.5em;
 }
 
 ol, ul {
