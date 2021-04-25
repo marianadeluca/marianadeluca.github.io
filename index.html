@@ -1,26 +1,28 @@
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <title>Mariana De Luca Reis | Resume </title>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/png" href="devicon.png"/>
+    <script src="https://kit.fontawesome.com/f2be5e8827.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.4.1.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Courier+Prime:400,400i,700,700i|Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style-desktop.css">
 </head>
 
 <body>
-    
-      
+  <button id="to-top"></button>
   <div class="container">
-    <header class= "header">
+    <header class= "header header-top200" id="header">
           <h1>Mariana De Luca Reis</h1>
           
           <span class="dev">developer</span>
     </header>
 
+    <div id="btnDiv" class="btn-div btn-div-initial">
+      <button class="btn btn-download" onclick="print()">Download CV</button>
+      <button class="btn btn-contact" onclick="">Contact</button>
+    </div>
     <div class="about title">
       <h2>
         About Me
@@ -29,12 +31,82 @@
 
     <div class="about text">
       <p>Hello! I'm Mariana, a <span id=myAge></span> year old that likes to learn new things, is not afraid of changing and is easy to adapt.
-        In my initial formation, I sudied Graphic Design, an area in which today I work only as a freelancer and in personal projects, 
-        with over 10 years of experience in creating layouts for print and web, desktop publishing and illustration.
+        In my initial formation, I sudied <a class="about-link" href="#graphicDesign">Graphic Design</a>, an area in which today I work only 
+        as a freelancer and in personal projects, with over 10 years of experience in creating layouts for print and web, desktop publishing 
+        and illustration.
       </p>  
-      <p>Currently studying Digital Games, where I discovered that what 
+      <p>Currently studying <a class="about-link" href="#digitalGames">Digital Games</a>, where I discovered that what 
         motivates me is to solve problems and challenge myself, I found those things in my Developer career and in the Technology sector, 
         where I work and have been in constant development since 2018.</p>
+    </div>
+
+
+
+    <div class="skills title">
+      <h2>
+        My Skills
+      </h2>
+    </div>
+
+    <div class="skills topics">
+      <ol>
+        <li class="skill-category">
+            <h3>Main Languages & Tools</h3> 
+            <p>
+              HTML5 <span class="dotted-s">•</span> 
+              CSS3 <span class="dotted-s">•</span>  
+              JavaScript <span class="dotted-s">•</span>
+              Bootstrap <span class="dotted-s">•</span>
+              Git <span class="dotted-s">•</span>
+              Oracle PLSQL 
+            </p>
+            
+          </li>
+          
+          <li class="skill-category">
+            <h3>Secondary Languages & Tools</h3>
+            
+            <p>
+              MySQL <span class="dotted-s"></span>
+              Ruby on Rails <span class="dotted-s"></span>
+              jQuery <span class="dotted-s">•</span>  
+              AngularJS <span class="dotted-s">•</span>
+              Angular2+ <span class="dotted-s">•</span>  
+              TypeScript <span class="dotted-s">•</span>  
+              Java <span class="dotted-s">•</span>  
+              Docker <span class="dotted-s">•</span>  
+              Visual Basic for Applications (VBA) <span class="dotted-s">•</span> 
+              SEO <span class="dotted-s">•</span>  
+              Linux OS 
+            </p>
+        </li>
+
+        <li class='other-skills skill-category'>
+            <h3>Another Skills</h3>
+
+            <p>  
+            
+            </p>
+
+            <ul>      
+                <li>
+                    <p>Layouts and Interfaces <small>[Adobe Photoshop | Adobe Illustrator | Adobe InDesign | Figma]</small></p>
+                </li>
+
+                <li>
+                    <p>Game Design <small>[Unity 3D | C# | Phaser]</small></p>
+                </li>
+
+                <li>
+                    <p>Desktop Publishing (DTP) <small>[Adobe Indesign | Adobe Framemaker | Microsoft Word | Microsoft PowerPoint]</small></p>
+                </li>
+
+                <li>
+                    <p>Web-based Training (WBT) <small>[Articulate Studio | Articulate Storyline]</small></p>
+                </li>                        
+            </ul>
+        </li>
+      </ol>
     </div>
 
     <div class="experience title">
@@ -46,8 +118,8 @@
     <div class="experience topics">
       <ol>
         <li>
-            <h3>Thomson Reuters</h3> <small>[estágio | aug/2019 - current]</small>
-            <p>Software development and maintenance using Oracle PL/SQL, Centura Team Developer, Forms6, Forms12 e JavaScript languages and Scrum methodology. 
+            <h3>Thomson Reuters</h3> <small>[intern | aug/2019 - current]</small>
+            <p>Software development and maintenance using Oracle PL/SQL, Centura Team Developer, Forms6, Forms12 and JavaScript languages, using Scrum methodology. 
               Throughout my internship, I participated in Job Rotations, where  I was able to work in different products and areas of the company, 
               occasionally performing functions as Tester and Functional Analyst; in addition to that I took part in the creation of internal development 
               projects using Python and frameworks like Angular and Springboot.                    
@@ -65,7 +137,7 @@
         </li>
 
         <li>
-            <h3>Netwire Global</h3> <small>[technical support/designer | jun/2015 - set/2016]</small>
+            <h3>Netwire Global</h3> <small>[technical support/designer | jun/2015 - sep/2016]</small>
             <p>I was part of the Technical Support team, being responsible for the preparation of different files to be used in translation tools, 
               like manuals, whitepapers, packages, documentation, articles, among others; recreation of PDF files in editable format and desktop 
               publishing/diagramming using softwares like Adobe Indesign, Adobe Illustrator, Adobe Framemaker, CorelDraw and Office applications. 
@@ -74,13 +146,13 @@
         </li>
 
         <li>
-            <h3>MStech</h3> <small>[intern | fev/2012 - fev/2014]</small>
+            <h3>MStech</h3> <small>[intern | feb/2012 - feb/2014]</small>
             <p>I worked in the creation of layouts, illustrations and interface design for educational games, websites and applications. Bauru/SP.
             </p>
         </li>
 
         <li>
-            <h3>Completa - Atacadista</h3> <small>[intern | nov/2010 - fev/2012]</small>
+            <h3>Completa - Atacadista</h3> <small>[intern | nov/2010 - feb/2012]</small>
             <p>Creation and design of e-mail marketing, banners, catalogs and stationery. Bauru/SP.</p>
         </li>
       </ol>
@@ -95,12 +167,12 @@
     <div class="education topics">
       <ol>
         <li class="academic">
-            <h3>Digital Games Technology Degree</h3><small> [2nd SEM/2017 - in course]</small>
-            <p> FATEC - Americana</p> 
+            <h3 id="digitalGames">Digital Games Technology Degree</h3><small> [2017 - in course]</small>
+            <p> FATEC/Americana - Faculdade de Tecnologia de Americana</p> 
         </li>
 
         <li class="academic">
-            <h3>Graphic Design Bachelor's Degree</h3> <small> [2008-2014]</small>
+            <h3 id="graphicDesign">Graphic Design Bachelor Degree</h3> <small> [2008-14]</small>
             <p> UNESP/Bauru - Universidade Estadual Paulista "Júlio de Mesquita Filho"</p>
         </li>
 
@@ -135,69 +207,6 @@
       </ol>
     </div>
 
-    <div class="skills title">
-      <h2>
-        Skills
-      </h2>
-    </div>
-
-    <div class="skills topics">
-      <ol>
-        <li class="skill-category">
-            <h3>Primary</h3> 
-            <br>HTML5 <span class="dotted-s">•</span> 
-                CSS3 <span class="dotted-s">•</span>  
-                SASS <span class="dotted-s">•</span>  
-                Oracle SQL <span class="dotted-s">•</span>
-                MySQL <span class="dotted-s">•</span>  
-                Bootstrap <span class="dotted-s">•</span>
-                JavaScript 
-        </li>
-        
-        <li class="skill-category">
-            <h3>Secondary</h3>
-
-            <br>Ruby on Rails <span class="dotted-s">•</span>
-                jQuery <span class="dotted-s">•</span>  
-                Angular 2+ <span class="dotted-s">•</span>  
-                TypeScript <span class="dotted-s">•</span>  
-                Java <span class="dotted-s">
-        </li>
-
-        <li class='other-skills skill-category'>
-            <h3>Another</h3>
-
-            <p>Git <span class="dotted-s">•</span>  
-              Linux <span class="dotted-s">•</span>  
-              Docker <span class="dotted-s">•</span>  
-              Google Analytics <span class="dotted-s">•</span> 
-              SEO</p>
-
-            <ul>      
-                <li>
-                    <p>Layouts and Interfaces <small>[Adobe Photoshop | Adobe Illustrator | Adobe InDesign | Figma]</small></p>
-                </li>
-
-                <li>
-                    <p>Game Design <small>[Unity 3D | C#]</small></p>
-                </li>
-
-                <li>
-                    <p>Desktop Publishing <small>[Adobe Indesign | Adobe Framemaker | Microsoft Word | Microsoft PowerPoint]</small></p>
-                </li>
-
-                <li>
-                    <p>Motion Graphics, Presentation and Video Editing <small>[Adobe AfterEffects | Microsoft PowerPoint | Movavi Video Suite]</small></p>
-                </li>
-
-                <li>
-                    <p>Web-based Training (WBT) <small>[Articulate Studio | Articulate Storyline]</small></p>
-                </li>                        
-            </ul>
-        </li>
-      </ol>
-    </div>
-
     <div class="languages title">
       <h2>
         Languages
@@ -220,44 +229,61 @@
 
     <div class="contact title">
       <h2>
-        Contact<br> & Design Portfolio
+        Contact & Design Portfolio
       </h2>
     </div>
 
     <div class="contact topics">
       <ul class="contact-list">
         <li>
-          (19) 9 9291 3893
+          <i class="fab fa-whatsapp-square"></i><a href="https://wa.me/5519992913893" target="_blank">(19) 9 9291 3893</a>
         </li>
 
         <li>
-            marianadeluca.reis@gmail.com
+          <i class="fas fa-envelope-square"></i><a href="mailto:marianadeluca.reis@gmail.com?subject=Mail%20from%20the%20Web%20Site" target="_blank">marianadeluca.reis@gmail.com</a>
         </li>
 
         <li>
-          <a href="https://www.linkedin.com/in/marianadelucareis/">linkedin.com/in/marianadelucareis</a>
-            
-        </li>
+          <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/marianadelucareis/" target="_blank">linkedin.com/in/marianadelucareis</a>
+        </li> 
 
         <li>
-          <a href="https://www.behance.net/marianadeluca">behance.net/marianadeluca</a>                  
+          <i class="fab fa-behance-square"></i><a href="https://www.behance.net/marianadeluca" target="_blank">behance.net/marianadeluca</a>                  
         </li>
       </ul>
     </div>
-
-    <footer class="footer">
-      <div class="footer-line"></div>
-      <p class="site-text">Mariana De Luca Reis @<script type="text/javascript">document.write( new Date().getFullYear() );</script></p>
-    </footer>
   </div>
+
+  <footer class="footer">
+    <p class="site-text">Mariana De Luca Reis @<script type="text/javascript">document.write( new Date().getFullYear() );</script></p>
+  </footer>
 </body>
 
 <script>
+  const btnDiv = document.getElementById("btnDiv")
+  const myHeader = document.getElementById("header")
+
   const calculateMyAge = () =>  {
     let age = new Date(1989, 11, 14)
-    var diff_ms = Date.now() - age.getTime();
-    var age_dt = new Date(diff_ms);   
-    return Math.abs(age_dt.getUTCFullYear() - 1970);
+    var diff_ms = Date.now() - age.getTime()
+    var age_dt = new Date(diff_ms)
+    return Math.abs(age_dt.getUTCFullYear() - 1970)
   }
   document.getElementById("myAge").innerHTML = calculateMyAge()  
+
+
+  window.onscroll = function() {scrollMargin()}
+
+  const scrollMargin = () => {
+    
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+      btnDiv.classList.remove("btn-div-initial")
+      myHeader.classList.remove("header-top200")
+    }
+    else {
+      btnDiv.className = "btn-div"
+      myHeader.classList.add("header-top50")
+    }
+  }
+
 </script>
