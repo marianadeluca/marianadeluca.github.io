@@ -2,27 +2,30 @@
 <head>
     <meta charset="utf-8">
     <title>Mariana De Luca Reis | Resume </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Mariana De Luca Reis - CV">
     <link rel="icon" type="image/png" href="devicon.png"/>
     <script src="https://kit.fontawesome.com/f2be5e8827.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="style-desktop.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style-desktop.css"> -->
 </head>
 
 <body>
   <button id="to-top"></button>
   <div class="container">
     <header class= "header header-top200" id="header">
-          <h1>Mariana De Luca Reis</h1>
-          
-          <span class="dev">developer</span>
+      <h1>Mariana De Luca Reis</h1>
+      
+      <span class="dev">developer</span>
+      
+      <div id="btnDiv" class="btn-div btn-div-initial">
+        <button class="btn btn-download" onclick="print()">Download CV</button>
+        <button class="btn btn-contact" onclick="">Contact</button>
+      </div>
     </header>
 
-    <div id="btnDiv" class="btn-div btn-div-initial">
-      <button class="btn btn-download" onclick="print()">Download CV</button>
-      <button class="btn btn-contact" onclick="">Contact</button>
-    </div>
     <div class="about title">
       <h2>
         About Me
@@ -30,12 +33,13 @@
     </div>
 
     <div class="about text">
-      <p>Hello! I'm Mariana, a <span id=myAge></span> year old that likes to learn new things, is not afraid of changing and is easy to adapt.
-        In my initial formation, I sudied <a class="about-link" href="#graphicDesign">Graphic Design</a>, an area in which today I work only 
-        as a freelancer and in personal projects, with over 10 years of experience in creating layouts for print and web, desktop publishing 
-        and illustration.
+      <p>Hello! I'm Mariana, a developer currently based in Americana, São Paulo. As someone that likes to learn new things, 
+        is not afraid of changing and is easy to adapt, in my initial formation I sudied <a class="about-link" href="#graphicDesign">Graphic Design</a>, 
+        an area in which today I work only as a freelancer and in personal projects, with over 10 years of experience in creating layouts for print and web, 
+        desktop publishing and illustration.
       </p>  
-      <p>Currently studying <a class="about-link" href="#digitalGames">Digital Games</a>, where I discovered that what 
+      
+      <p>Right now I'm finishing my second graduation in <a class="about-link" href="#digitalGames">Digital Games</a>, where I discovered that what 
         motivates me is to solve problems and challenge myself, I found those things in my Developer career and in the Technology sector, 
         where I work and have been in constant development since 2018.</p>
     </div>
@@ -49,8 +53,8 @@
     </div>
 
     <div class="skills topics">
-      <ol>
-        <li class="skill-category">
+      <ol class="skill-category">
+        <li>
             <h3>Main Languages & Tools</h3> 
             <p>
               HTML5 <span class="dotted-s">•</span> 
@@ -63,7 +67,7 @@
             
           </li>
           
-          <li class="skill-category">
+          <li>
             <h3>Secondary Languages & Tools</h3>
             
             <p>
@@ -81,12 +85,9 @@
             </p>
         </li>
 
-        <li class='other-skills skill-category'>
+        <li class='other-skills'>
             <h3>Another Skills</h3>
 
-            <p>  
-            
-            </p>
 
             <ul>      
                 <li>
@@ -165,7 +166,7 @@
     </div>
 
     <div class="education topics">
-      <ol>
+      <ol class="edu-list">
         <li class="academic">
             <h3 id="digitalGames">Digital Games Technology Degree</h3><small> [2017 - in course]</small>
             <p> FATEC/Americana - Faculdade de Tecnologia de Americana</p> 
@@ -229,7 +230,7 @@
 
     <div class="contact title">
       <h2>
-        Contact & Design Portfolio
+        Contact <span>& Design Portfolio</span>
       </h2>
     </div>
 
@@ -251,26 +252,21 @@
           <i class="fab fa-behance-square"></i><a href="https://www.behance.net/marianadeluca" target="_blank">behance.net/marianadeluca</a>                  
         </li>
       </ul>
-    </div>
+    </div> 
+    
+    <footer class="footer">
+      <p class="site-text">Mariana De Luca Reis @<script type="text/javascript">document.write( new Date().getFullYear() );</script>
+        <br><a href="https://marianadeluca.github.io/">marianadeluca.github.io</a>
+      </p>
+    </footer>
+
   </div>
 
-  <footer class="footer">
-    <p class="site-text">Mariana De Luca Reis @<script type="text/javascript">document.write( new Date().getFullYear() );</script></p>
-  </footer>
 </body>
 
 <script>
   const btnDiv = document.getElementById("btnDiv")
   const myHeader = document.getElementById("header")
-
-  const calculateMyAge = () =>  {
-    let age = new Date(1989, 11, 14)
-    var diff_ms = Date.now() - age.getTime()
-    var age_dt = new Date(diff_ms)
-    return Math.abs(age_dt.getUTCFullYear() - 1970)
-  }
-  document.getElementById("myAge").innerHTML = calculateMyAge()  
-
 
   window.onscroll = function() {scrollMargin()}
 
