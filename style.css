@@ -115,8 +115,11 @@ small {
     font-family: 'DM Mono', 'Courier New', 'Courier', monospace;
     font-size: 1.1em;
     margin: auto;
-    padding: 1em 3em;
     width: 60%;
+    padding: 1em 2em;
+    text-decoration: none;
+    text-align: center;
+    
 }
 .btn:hover {
     background-color: var(--c-tiffany1);
@@ -279,10 +282,11 @@ small {
 }
 
 .footer {
-    font-size: .8em;
+    font-size: .6em;
+    font-weight: 300;
     grid-area: footer;
     margin-top: 6rem;
-    padding: 4rem;
+    padding: 2rem;
     text-align: center;
 }
 .footer a {
@@ -368,6 +372,11 @@ small {
     display: none;
 }
 
+@media only screen and (min-width: 481px) {
+    .btn {
+        max-width: 30%;
+    }
+}
 
 @media only screen and (min-width: 1024px) {
 
@@ -593,13 +602,13 @@ small {
             color: var(--c-tiffany1);
             content: '';
             display: inline-block;
-            height: 0.8em;
+            height: 0.85em;
             left: 0.1em;
             position: relative;
             top: 0.1em;
             transform: rotate(135deg);
             vertical-align: top;
-            width: 0.8em;
+            width: 0.85em;
         }
 }
 
