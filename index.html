@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>Mariana De Luca Reis | Resume </title>
+    <title>Mariana De Luca Reis | CV </title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="Mariana De Luca Reis - CV">
     <link rel="icon" type="image/png" href="devicon.png"/>
     <script src="https://kit.fontawesome.com/f2be5e8827.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="style.css"/>
+    <link rel="stylesheet" media="print" href="print.css"/>
 </head>
 
 <body>
-  <button id="to-top"></button>
+  <button id="toTop" class="to-top" onclick="scrollPage()"></button>
   <div class="container">
     <header class= "header header-top200" id="header">
       <h1>Mariana De Luca Reis</h1>
@@ -27,7 +28,7 @@
 
     <div class="about title">
       <h2>
-        About Me
+        About
       </h2>
     </div>
 
@@ -44,7 +45,6 @@
     </div>
 
 
-
     <div class="skills title">
       <h2>
         My Skills
@@ -55,7 +55,7 @@
       <ol class="skill-category">
         <li>
             <h3>Main Languages & Tools</h3> 
-            <p>
+            <p class="prt-mg-bt">
               HTML5 <span class="dotted-s">•</span> 
               CSS3 <span class="dotted-s">•</span>  
               JavaScript <span class="dotted-s">•</span>
@@ -69,7 +69,7 @@
           <li>
             <h3>Secondary Languages & Tools</h3>
             
-            <p>
+            <p class="prt-mg-bt">
               MySQL <span class="dotted-s"></span>
               Ruby on Rails <span class="dotted-s"></span>
               jQuery <span class="dotted-s">•</span>  
@@ -86,7 +86,6 @@
 
         <li class='other-skills'>
             <h3>Another Skills</h3>
-
 
             <ul>      
                 <li>
@@ -127,7 +126,7 @@
               </p>
         </li>
 
-        <li>
+        <li class="pg-break">
             <h3>Encoda Desenvolvimento Web</h3> <small>[intern | jan/2018 - aug/2019]</small>
             <p>I acted as a Web Developer assisting in bug fixing, maintenance and creation of web pages for Fundação Estudar, 
               among other clients. I developed in a Linux environment using Docker and Git for versioning control, HTML5/CSS3, MySql, 
@@ -251,7 +250,7 @@
           <i class="fab fa-behance-square"></i><a href="https://www.behance.net/marianadeluca" target="_blank">behance.net/marianadeluca</a>                  
         </li>
       </ul>
-    </div> 
+    </div>
 
     <footer class="footer">
       <p class="site-text">Mariana De Luca Reis @<script type="text/javascript">document.write( new Date().getFullYear() );</script>
@@ -266,19 +265,30 @@
 <script>
   const btnDiv = document.getElementById("btnDiv")
   const myHeader = document.getElementById("header")
+  const scrollBtn = document.getElementById("toTop")
 
   window.onscroll = function() {scrollMargin()}
 
   const scrollMargin = () => {
+
+    scrollBtn.style.display = "none"
     
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
       btnDiv.classList.remove("btn-div-initial")
       myHeader.classList.remove("header-top200")
+      scrollBtn.style.display = "none"
     }
     else {
       btnDiv.className = "btn-div"
-      myHeader.classList.add("header-top50")
+      myHeader.classList.add("header-top80")
     }
+    
   }
 
+  const scrollPage = () => {
+    document.body.scrollTop = 100
+    document.documentElement.scrollTop = 100
+
+    scrollBtn.style.display = "none"
+  }
 </script>
