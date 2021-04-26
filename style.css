@@ -118,7 +118,9 @@ small {
     display: block;
     font-family: 'DM Mono', 'Courier New', 'Courier', monospace;
     font-size: 1.1em;
+    margin: auto;
     padding: 1em 3em;
+    width: 60%;
 }
 .btn:hover {
     background-color: var(--c-tiffany1);
@@ -133,13 +135,12 @@ small {
 }
 
 .btn-div  {
+    background-color: var(--c-tiffany0);
     align-content: stretch;
     display: flex;
     flex-direction: column;
+    grid-area: btn;
     justify-content: center;
-    margin: auto;
-    place-self: center;
-    width: 80%;
 }
 
 .contact.title {
@@ -164,6 +165,7 @@ small {
     display: grid;
     grid-template-areas: 
     "header header header header"
+    "btn btn btn btn"
     ". ab-title ab-title ."
     ". ab-text ab-text ."
     "sk-title sk-title sk-title sk-title"
