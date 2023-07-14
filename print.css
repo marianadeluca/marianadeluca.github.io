@@ -1,0 +1,170 @@
+@media print {
+    @page {
+        margin: 2cm 0 0 0;
+        size: A4;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+    body {
+        color: var(--c-black);
+        font-size: 11pt;
+    }
+
+    footer {
+        display: none;
+    }
+
+    h1, h2, h3, h4 { 
+        page-break-after: avoid; 
+        page-break-inside: avoid; 
+    }
+    
+    h1 {
+        font-family: 'Arial', sans-serif;
+        font-size: 16pt;
+        font-style: italic;
+        font-weight: normal;
+    }
+    
+    h2 {
+        border: none;
+        font-family: 'DM Mono', monospace;
+        font-size: 12pt;
+        font-weight: 500;
+    }
+
+    h3, h4 {
+        font-family: 'DM Mono', monospace;
+        font-weight: 500;
+    }
+    
+    h3 {
+        display: inline;
+        font-size: 11pt;
+        margin-bottom: 0;
+    }
+
+    h4 {
+        font-size: 10pt;
+        margin: 0;
+    }
+
+    li {
+        margin: .2cm;
+    }
+
+    ol {
+        list-style-type: none;
+    }
+
+    p {
+        font-size: 9pt;
+        font-family: 'Arial', sans-serif;
+        line-height: 14pt;
+        page-break-after: avoid; 
+        page-break-inside: avoid; 
+    }
+
+    small {
+        display: inline;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .about.title,
+    .contact.title,
+    .education.title,
+    .experience.title,
+    .languages.title,
+    .skills.title {
+        margin-top: 1cm;
+    }
+   
+    .btn-div {
+        display: none;
+    }
+
+    .container {
+        display: block;
+        margin: 1cm 2.5cm 3cm 2cm;
+    }
+
+    .contact-list {
+        font-family: 'Arial', sans-serif;
+        font-size: 9.5pt;
+        line-height: 14pt;
+        list-style-type: none;
+    }
+
+    .education, .skills,
+    .footer {
+        color: var(--c-black);
+        background-color: white;
+    }
+
+    .education.topics .edu-list .other-education {
+        color: var(--c-black);
+    }
+        .education.topics .edu-list .other-education-topics {
+            list-style-type: disc !important;
+            margin-left: 0;
+        }
+            .education.topics .edu-list .other-education-topics li {
+                margin-top: .5cm;
+            }
+                .education.topics .edu-list .other-education-topics li h4 {
+                    margin-bottom: 0;
+                }
+                .education.topics .edu-list .other-education-topics li p {
+                    font-style: italic;
+                    list-style-type: disc;
+                    margin-top: 0;
+                }
+
+
+    .fab, .fas {
+        margin-right: 0.4cm;
+    }
+
+    .header,
+    .header .dev {
+        margin: 0 !important;
+    }
+
+    .header .dev {
+        font-family: 'DM Mono', monospace;
+        font-weight: 300;
+    }
+        .header .dev::after {
+            content: " -->"
+        }
+        .header .dev::before {
+            content: "<!-- "
+        }
+
+    .languages.title {
+        margin-top: 6cm;
+    }
+
+    .pg-break {
+        margin-top: 20cm !important;
+    }
+
+    .skills.topics .prt-mg-bt {
+        margin-bottom: 0.6cm;
+    }
+
+    .skills.topics .skill-category .other-skills {
+        color: var(--c-black) !important;
+    }
+        .skills.topics .skill-category .other-skills p,
+        .skills.topics .skill-category .other-skills small {
+            color: var(--c-black)
+        }
+
+    .to-top {
+        display: none;
+    }
+}
